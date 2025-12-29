@@ -1,12 +1,87 @@
-<html>
+Sure — here’s a cleaner, more structured version suitable for a homepage. I added basic semantics (`header`, `main`, `footer`), meta tags, and some gentle starter styling — but kept it simple so you can expand later.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>
-Pranay Sowdaboina's blog.
-</title>
-<style>
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranay Sowdaboina's Blog</title>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9fafb;
+      color: #111827;
+    }
+
+    header {
+      background: #1f2937;
+      color: #ffffff;
+      padding: 1.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.75rem;
+    }
+
+    main {
+      padding: 1.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem 1.5rem;
+      background: #e5e7eb;
+      text-align: center;
+      font-size: 0.875rem;
+    }
+  </style>
 </head>
+
 <body>
-A post about our recent trip to <a href='/oahu-2025.html'>Oahu</a> in Dec 2025.
+  <header>
+    <h1>Pranay Sowdaboina’s Blog</h1>
+  </header>
+
+  <main>
+    <p>
+      A post about our recent trip to
+      <a href="/oahu-2025.html">Oahu</a> in Dec 2025.
+    </p>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Pranay Sowdaboina
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+```
+
+If you want, I can also:
+
+* add a blog-style list of posts
+* make it look more “card-style”
+* connect it to multiple pages
+* help troubleshoot why links might download instead of open
+
+Just tell me 👍
